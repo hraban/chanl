@@ -79,7 +79,7 @@ Channel API
 
 *[constant]* `+maximum-buffer-size+`
 
-  This constant has an implementation-dependant value, fixed when ChanL is loaded. It is the
+  This constant has an implementation-dependent value, fixed when ChanL is loaded. It is the
   exclusive upper bound to the size of a bounded-channel's buffer.
 
   Note that this value might be further limited by memory constraints.
@@ -173,7 +173,7 @@ Thread API
   used to initialize the name slot of the task object.
 
 
-*[macro]* `pexec (&key (initial-bindings *default-special-bindings*)) &body body`
+*[macro]* `pexec (&key (initial-bindings *default-special-bindings*) name) &body body`
 
   Executes BODY in parallel. INITIAL-BINDINGS, if provided, should be an alist representing dynamic
   variable bindings that BODY is to be executed with, as if with *default-special-bindings*. NAME
